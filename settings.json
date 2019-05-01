@@ -1,0 +1,8 @@
+{
+	"galaxy.meteor.com": {
+		"env": {
+			"MONGO_URL":"mongodb://pwachara:kabuyawa_77@ds127911-a0.mlab.com:27911/instructions",
+			"MAIL_URL": "smtp://b369a045-d750-4eeb-a4f4-c272dd0eac02:b369a045-d750-4eeb-a4f4-c272dd0eac02@smtp.postmarkapp.com:587"
+		}
+	}
+}

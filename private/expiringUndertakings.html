@@ -1,0 +1,34 @@
+<template name="expiringUndertakings">
+ <h3>List of Expiring Undertakings.</h3>
+
+    <table width="100%">
+        <tr>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Date of Instruction</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Lawyer</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Borrower</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Collateral</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Latest Update</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Date of Update</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Action Pending With</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Relationship Manager</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Expiry Date</th>
+            <th style="padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Duration To Expiry</th>
+        </tr>
+        {{#each getExpiringUndertakings}}
+            <tr>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{formattedDate date}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{lawyer.name}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{borrower}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{collateral}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{update}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{formattedDate update_date}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{action_pending_with}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{rm}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{formattedDate undertaking_end_date}}</td>
+                <td style="text-align: left; padding: 10px; border: 1px solid #aaa;">{{daysPast undertaking_end_date}}</td>
+            </tr>
+        {{/each}}
+    </table>
+
+    <div>This email is automated.  Do not reply to it.</div>
+</template>

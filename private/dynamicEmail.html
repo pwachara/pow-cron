@@ -1,0 +1,44 @@
+<template name="dynamicEmail">
+ <h4>Dear {{rm}} please follow-up with the Customer to close the deferral below.</h4>
+    <table>
+        <tr>
+            <td></td>
+            <td width="600">
+                <table width="100%" style="border: 1px solid #eee;">
+                   
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Deferral Date</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{formattedDate deferral_date}}</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Relationship Manager</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{rm}}</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Borrower</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{borrower}}</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Item Deferred</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{item_deferred}}</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Authorized By</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{authorizer}}</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Due Date</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{formattedDate due_date}}</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;background-color: #a2f2fa">Days Overdue/ Due in</th>
+                        <td style="text-align: left; padding: 10px; border-bottom: 1px solid #eee;">{{daysPast due_date}}</td>
+                    </tr>
+                   
+                </table>
+            </td>
+        </tr>
+    </table>
+<div>This email is automated.  Do not reply to it.</div>
+<div><bold>Please contact Credit Operations for any queries.</bold></div>
+</template>
