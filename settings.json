@@ -1,8 +1,0 @@
-{
-	"galaxy.meteor.com": {
-		"env": {
-			"MONGO_URL":"mongodb://happy_philemonowachara:iy02IGoow9QeufNf8YCxAp0O5IZaLF@cranky-captain-mongodbs.opscaptain.com:27017/instructions-55",
-			"MAIL_URL": "smtp://b369a045-d750-4eeb-a4f4-c272dd0eac02:b369a045-d750-4eeb-a4f4-c272dd0eac02@smtp.postmarkapp.com:587"
-		}
-	}
-}
